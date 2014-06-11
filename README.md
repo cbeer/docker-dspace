@@ -8,5 +8,5 @@ $ docker pull cbeer/dspace
 $ docker run --link some-postgres-container:postgres -p 8080:8080 cbeer/dspace /tmp/seed-dspace-database.sh
 
 $ docker run --link some-postgres-container:postgres -p 8080:8080 cbeer/dspace
-$ curl http://localhost:8080/xmlui
+$ curl http://localhost:8080/jspui
 ```
