@@ -8,3 +8,4 @@ sed -i "s#db.url = jdbc:postgresql://localhost:5432/dspace#db.url = jdbc:postgre
 cp -f /dspace/config/dspace.cfg config/dspace.cfg;
 ant ${DSPACE_ANT_OPTS} test_database
 ant ${DSPACE_ANT_OPTS} setup_database
+/dspace/bin/dspace create-administrator -e ${admin_email:-archivist1@example.com} -f ${admin_firstname:-DSpace} -l ${admin_lastname:-Admin} -p ${admin_passwd:-archivist1} -c ${admin_language:-en}
